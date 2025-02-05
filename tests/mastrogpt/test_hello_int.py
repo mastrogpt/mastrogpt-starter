@@ -6,5 +6,3 @@ def test_demo():
     args = { "input": "Test"}
     res = req.post(url, json=args).json()
     assert res["output"] == "Hello, Test"
-
-
