@@ -4,7 +4,13 @@
 	"service": "app",
 	"workspaceFolder": "/workspaces/${localWorkspaceFolderBasename}",
 	"remoteUser": "node",
-	"postCreateCommand": "ops -plugin https://gitub.com/mastrogpt/olaris-ai ; ops ai lesson",
+	"containerEnv": {
+        "OPS_BRANCH": "main"
+    },
+    "remoteEnv": {
+        "OPS_BRANCH": "main"
+    },
+	"postCreateCommand": "ops -update ; ops -plugin https://gitub.com/mastrogpt/olaris-ai ; ops ai lesson",
 	"customizations": {
 		"vscode": {
 			"extensions": [
