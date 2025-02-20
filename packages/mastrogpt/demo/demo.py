@@ -14,10 +14,10 @@ FORM = [
     "required": "true"
   },
   {
-      "name": "tone",
-      "label": "What tone should the post have?",
-      "type": "text",
-      "required": "true"
+    "name": "tone",
+    "label": "What tone should the post have?",
+    "type": "text",
+    "required": "true"
   }
 ]
 

@@ -10,7 +10,7 @@ You can:
 -  Ask for a free development account on `openserverless.dev` courtesy of [Nuvolaris](http://nuvolaris.io). Contact us:
    - on [MastroGPT.com](https://mastrogpt.nuvolaris.dev) using our chatbot
    - on [Linkedin](https://linkedin.com/in/msciab) sending a private message 
-   - on [Discord](https://bit.ly/openserverless-discord) (contact ***Michele Sciabarra**)
+   - on [Discord](https://bit.ly/openserverless-discord) (contact **Michele Sciabarra**)
    - on [Reddit](https://reddit.com/r/openserverless) sending a private message to [msciabarra](https://reddit.com/u/msciabarra)
   
 - Self-host it [installing by yourself](https://openserverless.apache.org/docs/installation/)
