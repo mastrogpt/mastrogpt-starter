@@ -1,0 +1,14 @@
+[
+    {
+    "name": "Simple",
+    "url": "chat/simple"
+   },
+   {
+    "name": "Countdown",
+    "url": "chat/countdown"
+   },
+   {
+    "name": "Chat",
+    "url": "chat/stateless"
+   }
+]
