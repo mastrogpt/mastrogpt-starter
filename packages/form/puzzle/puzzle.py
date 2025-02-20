@@ -1,7 +1,15 @@
 import re, os, requests as req
 #MODEL = "llama3.1:8b"
 MODEL = "phi4:14b"
-
+FORM = [
+  {
+    "name": "chess",
+    "label": "Which pieces do you want to include on the board?",
+    "required": "true",
+    "type": "radio",
+    "options": ["Knight", "Rook", "Bishop", "Queen"]
+  }
+]
 def chat(args, inp):
   host = args.get("OLLAMA_HOST", os.getenv("OLLAMA_HOST"))
   auth = args.get("AUTH", os.getenv("AUTH"))
@@ -24,14 +32,19 @@ def puzzle(args):
   inp = args.get("input", "")
   res = {}
   if inp == "puzzle":
-    inp = "generate a chess puzzle in FEN format"
-    out = chat(args, inp)
-    fen = extract_fen(out)
-    if fen:
-       print(fen)
-       res['chess'] = fen
-    else:
-      out = "Bad FEN position."
+    res['form'] = FORM
+  elif type(inp) is dict and "form" in inp:
+      data = inp["form"]
+      for field in data.keys():
+        print(data[field])
+        inp = f"""generate a chess puzzle in FEN format without any {data['chess']}"""
+      out = chat(args, inp)
+      fen = extract_fen(out)
+      if fen:
+        print(fen)
+        res['chess'] = fen
+      else:
+        out = "Bad FEN position."
   elif inp.startswith("fen"):
     fen = extract_fen(inp)
     if fen:
