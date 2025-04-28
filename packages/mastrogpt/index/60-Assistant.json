@@ -1,0 +1,10 @@
+[
+    {
+        "name": "OpenAI",
+        "url": "assistant/api"
+    },
+    {
+        "name": "Stateful",
+        "url": "assistant/stateful"
+    }
+]

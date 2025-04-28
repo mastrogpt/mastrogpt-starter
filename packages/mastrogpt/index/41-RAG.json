@@ -1,0 +1,10 @@
+[
+   {
+    "name": "Loader",
+    "url": "rag/loader"
+   },
+   {
+    "name": "RAG",
+    "url": "rag/rag"
+   }
+]
