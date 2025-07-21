@@ -1,0 +1,38 @@
+[
+    {
+    "name": "Translate",
+    "url": "vdisomma/translate"
+   },
+    {
+    "name": "Assistant",
+    "url": "vdisomma/assistant"
+   },
+   {
+    "name": "Countdown",
+    "url": "vdisomma/countdown"
+   },
+   {
+    "name": "S3",
+    "url": "vdisomma/store"
+   },
+   {
+    "name": "Load",
+    "url": "vdisomma/load"
+   },
+   {
+    "name": "Loader",
+    "url": "vdisomma/loader"
+   },
+   {
+    "name": "RAG",
+    "url": "vdisomma/rag"
+   },
+     {
+    "name": "Summarization",
+    "url": "vdisomma/summarization"
+   },
+   {
+    "name": "Webrag",
+    "url": "vdisomma/webrag"
+   }
+]
